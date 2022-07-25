@@ -1,0 +1,12 @@
+﻿@model DeckOfCardsModel
+<div class="row">
+@{
+    foreach (Card c in Model.cards)
+    {
+        <div class="col-2">
+        <p>@c.value @c.suit</p>
+        <img src="@c.image"/>
+        </div>
+    }
+}
+</div>
